@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CineBrasil</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css">
   <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -14,20 +15,25 @@
     <div class="navbar-container">
       <nav>
         <a href="#"><img src="img/logo.png" alt="HDC HOST" class="logo"></a>
+
         <ul class="navbar-items">
           <li>
             <a href="#">home</a>
           </li>
           <li>
-            <a href="#">preços</a>
+            <a href="#services">serviços</a>
           </li>
           <li>
-            <a href="#">contato</a>
+            <a href="#plans">planos</a>
+          </li>
+          <li>
+            <a href="#contact">contato</a>
           </li>
           <li>
             <a href="#" class="default-btn">entrar</a>
           </li>
         </ul>
+
       </nav>
     </div>
 
@@ -37,7 +43,7 @@
         <p>Onde a magia do cinema encontra a alma brasileira</p>
       </div>
 
-      <div class="services-container white-color">
+      <div class="services-container white-color" id="services">
         <ul>
           <li>
             <i class="fa-solid fa-film" style="color: #22adf0;"></i>
@@ -60,7 +66,7 @@
         </ul>
       </div>
 
-      <div class="plans-container">
+      <div class="plans-container" id="plans">
         <h3>Planos de Assinatura</h3>
         <p>Escolha o plano que atenda sua necessidade </p>
 
@@ -111,17 +117,23 @@
         
       </div>
 
-      <div class="contact-container">
+      <div class="contact-container" id="contact">
         <h3>Mande uma mensagem</h3>
         <p>Envie sua mensagem pra tirar alguma dúvida ou reclamação...</p>
 
         <form>
-          <input type="text" placeholder="Digite seu nome" >
-          <input type="email" placeholder="Digite seu e-mail">
+          <input type="text" placeholder="Digite seu nome"  required>
+          <input type="email" placeholder="Digite seu e-mail" required>
           <textarea placeholder="Escreva oque você deseja"></textarea>
+
+          <input type="submit" value="enviar">
         </form>
       </div>
+
     </main>
+
+    <footer><p>cinebrasil @ 2024</p></footer>
   </div>
+
 </body>
 </html>
